@@ -1,0 +1,281 @@
+body {
+  background-color: #ffff;
+  margin: 0;
+}
+
+.ir {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+#app {
+  margin: 0 auto;
+  background-color: #ffff;
+  padding: 15%;
+}
+
+.container-movie {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+}
+
+.title-container {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: black;
+  margin: 41px auto 37px;
+}
+
+.nav-movie {
+  width: 650px;
+  height: 0px;
+  border: 1px solid #bdbdbd;
+  margin: 28px auto;
+  border-radius: 10px;
+}
+
+.list-movie-nav {
+  display: flex;
+  margin: 0 auto;
+}
+
+.on {
+  margin: 30px auto;
+}
+
+.link-nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  margin: 28px 0;
+}
+
+.list-movie-info {
+  background-color: #ffff;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid #bdbdbd;
+  margin: 80px 28px 31px 29px;
+}
+
+.list-movie-info li {
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.img-movie {
+  width: 180px;
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 25px 25px 25px 25px;
+  padding: 19px 20px 0 20px;
+}
+
+.title-movie {
+  display: block;
+  text-align: left;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.list-info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.star-wrap {
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+div dt {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+  margin-right: 5px;
+}
+
+div dd {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.movie-star::before {
+  background-image: url(./img/별점이미지.png);
+  content: "";
+  width: 14px;
+  height: 13px;
+  margin-right: 4px;
+  float: right;
+}
+
+.link-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f2f2f2;
+  border-radius: 0 0 13px 13px;
+}
+
+.link {
+  display: inline-block;
+  padding: 9px 28px 12px 27px;
+  border-top: 1px solid #bdbdbd;
+  line-height: 2;
+}
+
+.link:first-child {
+  border-right: 1px solid #bdbdbd;
+}
+
+.link:last-child::before {
+  content: "";
+  display: inline-block;
+  background-size: 100%;
+  background-image: url(./img/영화목록페이지/아이콘_재생.png);
+  width: 13px;
+  height: 13px;
+  line-height: 2;
+  margin-right: 4px;
+}
+
+.container-company {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 100%;
+}
+
+.container-company .footer-top {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 53px;
+  margin-bottom: 42px;
+}
+
+.sns-wrapper {
+  display: flex;
+}
+
+.title-company {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-right: 70px;
+}
+
+.img-twitter {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+}
+
+.img-insta {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+}
+
+.img-facebook {
+  width: 20px;
+  height: 20px;
+}
+.footer-line {
+  width: 60%;
+}
+
+.list-company-info {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.list-company-info dt {
+  color: #4f4f4f;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.list-company-info dt::before {
+  content: "|";
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.list-company-info dd {
+  color: #828282;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.list-company-info dt:first-child::before {
+  content: "";
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 36px;
+  margin-bottom: 38px;
+}
+
+.list-company-info {
+  margin-left: 150px;
+}
+
+.list-company-info dd {
+  margin-left: 10px;
+}
+
+.text-copy {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+  margin-right: 200px;
+}
